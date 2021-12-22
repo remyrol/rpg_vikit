@@ -21,6 +21,7 @@ ENDIF()
 SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS} -O3 -fsee -fomit-frame-pointer -fno-signed-zeros -fno-math-errno -funroll-loops")
 
 # Add plain cmake packages 
+set(OpenCV_DIR /usr/share/OpenCV/)
 FIND_PACKAGE(OpenCV REQUIRED)
 FIND_PACKAGE(Eigen REQUIRED)
 FIND_PACKAGE(Sophus REQUIRED)
